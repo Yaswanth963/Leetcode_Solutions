@@ -1,1 +1,1 @@
-​
+​We iterate through all the elements in the given list and for each element in the given array we check if there is target-curr_num in the map. If it contains since the previous element will have smaller index, we return the previous index and current index otherwise we put the current element along eith its index.
