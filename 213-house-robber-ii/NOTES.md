@@ -1,0 +1,1 @@
+Since the first element is connected to last we either include or exclude the last element. So we return the max result upon computing the result by including and excluding the first element.
