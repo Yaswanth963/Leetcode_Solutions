@@ -1,1 +1,1 @@
-​
+For each possible index of robot1, there are three possible indices of robot2 so totally we have 9 recursive calls. Each recursive call has a solution and we obtain the max of these.
