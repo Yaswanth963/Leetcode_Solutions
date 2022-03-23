@@ -8,7 +8,7 @@ class Solution {
     int fun(int sc,int buf, int n){
         if(sc==n)
             return 0;
-        if(sc>n || buf>n)
+        if(sc>n)
             return (int)1e8;
         int cop=(int)1e8;
         if(sc!=buf)
