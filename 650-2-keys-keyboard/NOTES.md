@@ -1,1 +1,1 @@
-​
+Initially we do an operation i.e copy since there is no copy taken before. If we have copied something, it is not needed to copy agin and each operation costs 1. If our current string size reaches our target we return INT_MIN to avoid that recursive call,
