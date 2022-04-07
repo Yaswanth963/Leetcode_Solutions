@@ -1,11 +1,13 @@
 class Solution {
     public boolean validPalindrome(String s) {
        int l=0,r=s.length()-1;
-        while(l<r && s.charAt(l)==s.charAt(r)){
+        while(l<r){
+            if(s.charAt(l)!=s.charAt(r))
+                return palindrome(l+1,r,s) || palindrome(l,r-1,s);
             l++;
             r--;
         }
-        return palindrome(l+1,r,s) || palindrome(l,r-1,s);
+        return true;
     }
     
     boolean palindrome(int i, int j, String s){
