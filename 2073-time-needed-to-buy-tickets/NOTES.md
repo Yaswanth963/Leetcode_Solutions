@@ -1,0 +1,1 @@
+At some point of time when tickets[k] becomes zero and if k is at the middle of beginning of index there is no point of decrementing the tickets[i] after k.
