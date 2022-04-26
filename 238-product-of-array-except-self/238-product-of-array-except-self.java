@@ -3,10 +3,10 @@ class Solution {
         int len = nums.length;
         int resultArray[] = new int[len];
         resultArray[0] = 1;
-        int product = 1;
+        int product = nums[0];
         for(int i=1;i<len;i++){
-            product*=nums[i-1];
             resultArray[i]= product;
+            product*=nums[i];
         }
         
         product = nums[len-1];
