@@ -1,1 +1,1 @@
-​
+We start including the elements from index 0 and on including each element we get their average and update the max by recursively calling the array from curr+1 index. On each partition we decrement the value of k and after reaching k=0 we check if we are at last index of the array. Since we must include all elements of array. If we reach k=0 and still we are left with few elements, we return -1000000 to exclude it from the result.
