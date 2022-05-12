@@ -1,0 +1,1 @@
+In each cell we try to store both minimum and max possible answers on including the above cell and prev cell. Finally we return max stored in last cell. Since first row and col has only one path i.e obtaining cell from prev. we update it and start from index (1,1).
