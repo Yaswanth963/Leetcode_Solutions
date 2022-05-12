@@ -1,1 +1,1 @@
-​
+If we got an open bracket we simply push the corresponding closed bracket into the stack. If our current bracket is closed then we check if stack is empty or top of the stack is equal to current since we append closing bracket each time. If any of the condition fails we return false. We check if the stack is empty.
