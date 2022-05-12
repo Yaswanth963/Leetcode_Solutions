@@ -1,0 +1,1 @@
+Here we have used boolean array to keep track of the elements included. On each recursive call we add an element into the list, do recursive calls and then backtrack just by removing element from list and marking element as unvisited. He we iterate over the array not on indices.
