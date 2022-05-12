@@ -1,9 +1,12 @@
 class Solution {
     public int minMoves(int[] nums) {
-        Arrays.sort(nums);
-        int res = 0;
-        for(int in:nums)
-            res+=in-nums[0];
-        return res;
+        int min =Integer.MAX_VALUE;
+        int sum=0,c=0;
+        for(int in:nums){
+            sum+=in;
+            min=Math.min(min,in);
+            c++;
+        }
+        return sum-(min*c);
     }
 }
