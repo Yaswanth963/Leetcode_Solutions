@@ -29,7 +29,6 @@ class Solution {
         List<Node> al =new ArrayList<>();
         int height = height(node);
         int dp[] = new int[height];
-        // dp[0]=1;
         for(int i=1;i<height;i++)
             dp[i]=dp[i-1]+(int)Math.pow(2,i);
         for(int i=1;i<=height;i++)
@@ -39,7 +38,6 @@ class Solution {
             for(j=(int)Math.pow(2,i)-1;j<dp[i];j++){
                 al.get(j).next=al.get(j+1);
             }
-            al.get(j).next=null;
         }
         return root;
     }
