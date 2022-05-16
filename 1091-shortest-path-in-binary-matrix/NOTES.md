@@ -1,0 +1,1 @@
+Do bfs from cell (0,0) and move to all the eight directions. Visit the unvisited cells and return the minimum bfs call count to reach last cell. If we cant reach the end cell return -1.
