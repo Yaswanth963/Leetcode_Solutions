@@ -1,1 +1,1 @@
-​
+Get the height of the tree and similar to level order traversal add the elements of last level to sum. But this approach takes tree traversal two times. But this can be achieved in single traversal get the height at each level and update the max height. If current node is equal to max height add it to the max else update the max with curr max height valued node.
