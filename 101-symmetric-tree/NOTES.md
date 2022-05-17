@@ -1,0 +1,1 @@
+Check if both left and right exists and compare the root value and recursively call for left and right nodes. If either left or right does not exists simply return false.
