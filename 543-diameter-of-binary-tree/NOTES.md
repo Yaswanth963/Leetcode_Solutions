@@ -1,0 +1,1 @@
+We recursively call diameter on each node and when we reach null we return diam as 0. At each node we obtain the max diam of left and right and add 1 to it and return to parent node. We obtain max diameter as 1+leftdiam_rightdiam and since diameter is the number of edges between nodes we return maxdiam-1 as result.
