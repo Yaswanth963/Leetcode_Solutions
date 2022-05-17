@@ -1,0 +1,1 @@
+Check if root itself equals to subtree. If not recursively check if left or right contains subtree. If either of one condition holds good return true.
