@@ -1,1 +1,1 @@
-​
+Recursively go deep into the tree and return the same node if it is a leaf node. Swap the left and right node along with its child nodes i.e(swp node references) and return the root node.
