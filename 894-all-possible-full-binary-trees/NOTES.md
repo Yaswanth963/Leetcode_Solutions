@@ -1,1 +1,1 @@
-​
+The tree is said to be full binary tree if it has 0 or two children. So we consider all possible arrangements of left and right by iterating from 1 to n with an increment of two (to arrange 0 or 2 children) and 1 for root node. For each n we get  a list of nodes. For left subtree we get a list with few nodes and also for right subtree. Now we traverse through each node in both lists and get all possible arrangements of left and right subtrees for root node and add the result into the global list. We do memoize for each n to remove additional recursive calls.
