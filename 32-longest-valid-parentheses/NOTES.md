@@ -10,11 +10,9 @@ Dp approach. For each character in the string, check if current is ) or (. If cu
 ​
 ​
 ​
-​
 T:O(n)  S:O(N)
 ---------------------------------
 Stack based approach. Initially store -1 in the stack. For each character push the corresponding index into the stack If curr char is ( . If curr in ) pop the index from stack i.e index of the last ( and update the max with curr ind - ind at top unless the stack is empty.
-​
 ​
 ​
 ​
