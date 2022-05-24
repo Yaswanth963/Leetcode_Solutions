@@ -5,8 +5,10 @@
 //         int dp[] = new int[n];
 //         for(int i=1;i<n;i++){
 //             if(s.charAt(i)==')'){
+//          checking if prev character is (
 //                 if(s.charAt(i-1)=='(')
 //                     dp[i]=(i>=2?dp[i-2]:0)+2;
+//              if prev is ) go to ( if available and update dp[i]
 //                 else if(i-dp[i-1]>0 && s.charAt(i-dp[i-1]-1)=='('){
 //                         dp[i] = dp[i-1] + (i-dp[i-1]>=2?dp[i-dp[i-1]-2]:0)+2;
 //                 }
