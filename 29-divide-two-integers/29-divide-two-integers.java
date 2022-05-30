@@ -12,6 +12,7 @@ class Solution {
         divisor = (long)Math.abs(divisor);
         while(dividend>=divisor){
             div=divisor;i=1;
+            //-div To handle while break condition
             while(div<=dividend-div){
                     div<<=1;
                     i<<=1;
