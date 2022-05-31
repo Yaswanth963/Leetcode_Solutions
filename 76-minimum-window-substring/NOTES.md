@@ -1,0 +1,6 @@
+Initially we get the frequency of each character and store it in a map. We iterate on each character and get the frequency of each character in current string. If the frequency is equal to the freq of char in string s, it means we got all occurences of a character in s that is in t. So we update the formed count i.e so far unique characters we found in t. We search for unique characters count and compare it with total unique char cout in t and freq of each char using maps.
+​
+When formed == required i.e curr total unique chars == req unique chars, then we got the required string. But it is not sure that it is the minimum possible. So we keep on incrementing low pointers till we remain with same frequency. If curr char is already in our contribution i.e char at low, we decrement formed accordingly and increment high to get the next possible string. At each possible string we store the min length and low, high pointers.
+​
+​
+We are using .intValue() because Integer is a wrapper type and if we compare them like == it will compare as objects and return false. So we convert them into int and comparing. Also we use .equals() to compare both.
