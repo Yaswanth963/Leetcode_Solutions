@@ -1,0 +1,1 @@
+We take a window of size k and add all the possible combinations in the set. Since there are 1<<k possibilities of binary string with size k. we check if size of set == 1<<k.
