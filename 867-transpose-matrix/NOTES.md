@@ -1,1 +1,1 @@
-​
+Traverse the matrix colwise and add into res matrix as col wise.
