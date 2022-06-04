@@ -1,0 +1,3 @@
+Take prefix sum for each row in the matrix and take prefix sum for columns from the updated prefix sum. Now row2 and col2 represents the total sum till that cell. Now we need to subtract the not included region above the row and before the column. Since we are excluding few elements, twice i.e rowwise and colwise, we will add them to the existing result. Handle corner cases like first row and first col i.e cell we are dealing is in boundary or not.
+​
+​
