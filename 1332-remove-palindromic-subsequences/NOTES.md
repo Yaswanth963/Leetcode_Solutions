@@ -1,0 +1,1 @@
+Sice we are asking for a subsequence we can choose all a's at once and all b's at once. So that each time we are selecting a palindromic sequence. If the string is already a palindrome, we can simply return 1.
