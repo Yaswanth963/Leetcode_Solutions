@@ -1,1 +1,1 @@
-​
+Use two pointers one at first and other at last and add the sum of values at that indices. Get the sum and manage the pointers accordingly since the array is sorted.
