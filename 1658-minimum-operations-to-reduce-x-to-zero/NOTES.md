@@ -1,1 +1,1 @@
-​
+We are adding elements from either sides of the array. So we remain with subarray with sum total-x. So its similar to finding largest subarray with sum tot-x. We can use prefix sum and hashmap to get the prev occured sum in the array. Instead of taking prefix sum before we include each element while traversing in the curr variable and add it into the map. Check if we have subarray with req sum or not and return n-max_subarray_size(number of elements we are including).
