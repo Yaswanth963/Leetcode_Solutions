@@ -4,17 +4,12 @@ class Solution {
         int sum = Arrays.stream(nums).sum()-x;
         Map<Integer,Integer> map = new HashMap<>();
         int n =  nums.length;
-        int pre[]= new int[n];
-        pre[0]=nums[0];
+        int max=-1,curr=0;
         for(int i=0;i<n;i++){
-            if(i!=0)
-                pre[i]+=pre[i-1]+nums[i];
-            map.put(pre[i],i);
-        }
-        int max=-1;
-        for(int i=0;i<n;i++){
-            int remain = pre[i]-sum;
-            if(pre[i]==sum)
+            curr+=nums[i];
+            map.put(curr,i);
+            int remain = curr-sum;
+            if(curr==sum)
                 max=Math.max(max,i+1);
             if(map.containsKey(remain)){
                 max=Math.max(max,i-map.get(remain));
@@ -25,4 +20,15 @@ class Solution {
 }
 
 
-// 1 2 6 8 11
+
+//         for(int i=0;i<n;i++){
+//             int remain = pre[i]-sum;
+//             if(pre[i]==sum)
+//                 max=Math.max(max,i+1);
+//             if(map.containsKey(remain)){
+//                 max=Math.max(max,i-map.get(remain));
+//             }
+//         }
+//         return max==-1?-1:n-max;
+//     }
+// }
