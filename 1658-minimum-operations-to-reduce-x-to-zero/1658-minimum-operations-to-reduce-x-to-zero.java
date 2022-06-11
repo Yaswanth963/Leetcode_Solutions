@@ -18,17 +18,3 @@ class Solution {
         return max==-1?-1:n-max;
     }
 }
-
-
-
-//         for(int i=0;i<n;i++){
-//             int remain = pre[i]-sum;
-//             if(pre[i]==sum)
-//                 max=Math.max(max,i+1);
-//             if(map.containsKey(remain)){
-//                 max=Math.max(max,i-map.get(remain));
-//             }
-//         }
-//         return max==-1?-1:n-max;
-//     }
-// }
